@@ -6,9 +6,7 @@ WHERE low_fats = 'Y' AND recyclable = 'Y';
 -- Big countries
 SELECT name, population, area
 FROM World
-WHERE area >= 3000000 OR population >= 25000000; 
--- NOTE integer notation is much faster in performance, using 3000000 is faster than using 3e6 beacuase it does not need conversion
-
+WHERE area >= 3000000 OR population >= 25000000;
 
 -- Find customer referee
 SELECT name
