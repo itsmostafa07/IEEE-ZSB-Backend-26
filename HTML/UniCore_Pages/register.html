@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UniCore - Register</title>
+    <meta name="UniCore - Register" content="This is Register Page">
+    <link rel="icon" href="https://picsum.photos/200">
+    <link rel="stylesheet" href="./styling/style.css">
+
+    <style>
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration</h2>
+        <form action="#" method="post">
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="example@unicore.edu">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="dept">Department:</label>
+            <select id="dept" name="dept" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="CSE">Computer & Systems Engineering (CSE)</option>
+                <option value="CS">Computer Science (CS)</option>
+                <option value="IS">Information Systems (IS)</option>
+                <option value="IT">Information Technology(IT)</option>
+            </select>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <div class="gender-options">
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <button type="submit" class="btn-col">Register</button>
+            <button type="reset" class="btn-col">Reset</button>
+            <a href="./index.html" class="btn-col">← Back to Main Page</a>
+        </form>
+    </div>
+</body>
+</html>

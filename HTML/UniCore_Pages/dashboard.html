@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UniCore- Dashboard</title>
+    <meta name="UniCore- Dashboard" content="This is Dashboard Page">
+    <link rel="icon" href="https://picsum.photos/200">
+    <link rel="stylesheet" href="./styling/style.css">
+
+    <style>
+        body {
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <header class="dashboard-header">
+            <h1>Student Dashboard</h1>
+            <div class="profile-card">
+                <p><strong>Name:</strong> Mostafa Ahmed</p>
+                <p><strong>Major:</strong> Computer Engineering</p>
+                <p><strong>Year:</strong> 3rd Year (2026)</p>
+            </div>
+        </header>
+
+        <section class="schedule-container">
+            <h3>Weekly Class Schedule</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>09:00 - 10:30</th>
+                        <th>10:30 - 12:00</th>
+                        <th>12:30 - 2:00</th>
+                        <th>2:00 - 3:30</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day-col">Saturday</td>
+                        <td>Mathematics "Section"</td>
+                        <td>Laboratory "Section"</td>
+                        <td>Electrical Machine "Section"</td>
+                        <td class="empty">---</td>
+                    </tr>
+                    <tr>
+                        <td class="day-col">Sunday</td>
+                        <td>Control "Section"</td>
+                        <td class="empty">---</td>
+                        <td>Hardware Design</td>
+                        <td class="empty">---</td>
+                    </tr>
+                    <tr>
+                        <td class="day-col">Monday</td>
+                        <td colspan="2">Control</td>
+                        <td>Hardware Design "Section"</td>
+                        <td>Algorithms "Section"</td>
+                    </tr>
+                    <tr>
+                        <td class="day-col">Tuesday</td>
+                        <td>Algorithms</td>
+                        <td>Mathematics</td>
+                        <td>Electrical Machine</td>
+                        <td class="empty">---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="exams-container">
+            <h3>Upcoming Exams</h3>
+            <ul class="exam-list">
+                <li><a href="#">Midterm - Saturday, April 4th</a></li>
+                <li><a href="#">Midterm - Sunday, April 5th</a></li>
+                <li><a href="#">Midterm - Monday, April 6th</a></li>
+                <li><a href="#">Midterm - Tuesday, April 7th</a></li>
+                <li><a href="#">Midterm - Wednesday, April 8th</a></li>
+            </ul>
+        </section>
+
+        <footer class="dashboard-footer">
+            <a href="./index.html" class="btn-col">← Back to Main Page</a>
+        </footer>
+    </div>
+</body>
+</html>
